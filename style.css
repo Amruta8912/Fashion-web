@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.conatiner {
+    background-image: url('/omg/Beach-Dresses-Stock-Photo.webp');
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    font-size: 2.5rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 38%;
+}
+
+ul li {
+  
+    font-weight: 400;
+
+}
+
+ul li a {
+    color: black;
+    font-size: 1.5rem;
+}
+
+#right-para {
+    float: right;
+    margin-right: 20rem;
+    margin-top: 5rem;
+}
+
+#right-para p {
+    font-size: 4rem;
+    padding: 10px;
+}
+
+#right-para a {
+    all: unset;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-left: 10rem;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    background: transparent;
+    cursor: pointer;
+
+}
+#right-para a:hover{
+    background-color: lightblue;
+}
+.ham{
+    font-size: 30px;
+    float: right;
+    display: none;
+    margin-right: 20px;
+   
+}
+
+
+
+@media only screen and (max-width: 600px) {
+   .ham{
+    display: flex;
+   }
+   ul{
+    display: none;
+   }
+   ul.ham_active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    gap:50px;
+    height: 700px;
+    left: 0;
+    background-color: rgb(150, 252, 245);
+   }
+   #right-para {
+    float: right;
+    margin-right: 4rem;
+    margin-top: 8rem;
+}
+#right-para p {
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    margin-top: -43px;
+}
+}
+
+/* sec2 */
+.sec2{
+    text-align:center;
+    margin:30px;
+}
+.sec2 h2{
+    font-weight: bold;
+}
+.sec2 p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* sec3 */
+.sec3{
+    height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover ;
+background-position: right;
+    background-image: url('/omg/happy-smiling-long-haired-woman-dress-stands-white-wall.jpg');
+}
+.sec3 h3{
+    font-size: 2rem;
+    padding: 10px;
+}
+.sec3 h2{
+    font-size: 3rem;
+  text-align: left;
+
+}
+.sec3 a{
+    all: unset;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-left: 0rem;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    background: transparent;
+    cursor: pointer;
+
+}
+.sec3 a:hover{
+    background-color: lightblue;
+}
+.sec3 p{
+    flex-wrap: wrap;
+    font-size: larger;
+    padding: 10px;
+}
+.summary{
+    padding: 100px;
+    padding-top: 200px;
+}
+@media only screen and (max-width: 600px) {
+
+    .sec3{
+        height: 350px;
+        width: 100%;}
+    .summary{
+        padding: 50px;
+        padding-top: 10px;
+    } 
+    .sec3 h3{
+        font-size: 1rem;
+       
+    }
+    .sec3 h2{
+        font-size: 2rem;   
+   }
+    .sec3 a{
+        all: unset;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-left: 0rem;
+        border: 2px solid black;
+        padding: 5px;
+        margin-top: 50px;
+        background: transparent;
+        cursor: pointer;
+    color: black;
+    }
+    .sec3 p{
+        width: 200px;
+        font-size: 1rem;
+        margin-top: -20px;
+       
+    }
+}
+
+/* sec4 */
+.sec4{
+    text-align: center;
+    height: 600px;
+    width: 100%;
+    margin-top: 20px;
+  
+}
+.imgs img{
+    height: 400px;
+    margin: 10px 20px;
+}
+.seller a{
+    all: unset;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-left: 0rem;
+    border: 2px solid black;
+    padding: 10px 50px;
+    margin: 10px 0px;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.seller a:hover{
+    background-color: lightblue;
+}
+
+/* sec5 */
+.sec5{
+    height: 600px;
+    margin: 20px;
+}
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.photos img{
+  height: 270px;
+margin: 5px 10px;
+}
+.dresses{
+    position: relative;
+}
+.dresses a{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    border: 2px solid black;
+    color: black;
+    padding: 10px;
+}
+.dresses a:hover{
+    background-color: lightblue;
+}
+@media only screen and (max-width: 600px){
+    .sec5{
+        height: 600px;
+        margin: 20px;
+        margin-top: 50rem;
+    } 
+    .photos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    } 
+}
+/* sec6 */
+.brand{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  
+    margin-left: 10px;
+}
+
+.mybrand{
+    width: 45%;
+}
+.mybrand img{
+    width: 100%;
+}
+.story h4,h2{
+    text-align: center;
+}
+.story{
+    width: 45%;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+@media only screen and (max-width: 600px){
+    .brand{
+        display: grid;
+        padding: 10px;
+        align-items: ltr;
+        margin-top: 70rem;
+    }
+    .mybrand{
+        width: 100%;
+    }
+    .mybrand img{
+        width: 100%;
+    }
+    .story{
+        width: 100%;
+        padding: 0;
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+}
+
+/* footer */
+.footer{
+    display: flex;
+   height: 400px;
+    background-color: lightblue;
+    align-items: center;
+    justify-content: center;
+}
+.mail{
+    width: 52%;
+  text-align: center;
+}
+.mail input{
+    height: 40px;
+    width:300px;
+    background: transparent;
+    text-align: center;
+}
+.mail button{
+    all: unset;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-left: 0rem;
+    border: 2px solid black;
+    padding: 10px 30px;
+    margin: 10px 0px;
+    background: transparent;
+    cursor: pointer;
+
+}
+.img{
+    width: 15%;
+}
+.img{
+    display: flex;
+  
+    margin: 20px;
+}
+.img img{
+    width: 100%;
+  padding: 10px;
+}
+.add p{
+    margin-top: 364px;
+    text-align: center;
+    margin-left: -799px;
+}
+@media only screen and (max-width: 600px){
+    .footer{
+        display: grid;
+       height: 400px;
+        background-color: lightblue;
+    }
+    .mail{
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: -8px;
+    }
+    .mail input{
+        height: 40px;
+        width:300px;
+        background: transparent;
+    }
+    .add p {
+        margin-top: -61px;
+        text-align: center;
+        margin-left: -26px;
+    }
+    
+}
+

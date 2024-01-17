@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Cormorant Garamond', serif;
+ 
+}
+
+.logo {
+    font-size: 2.5rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 38%;
+}
+
+ul li {
+  
+    font-weight: 400;
+
+}
+
+ul li a {
+    color: black;
+    font-size: 1.5rem;
+}
+.ham{
+    font-size: 30px;
+    float: right;
+    display: none;
+    margin-right: 20px;
+   
+}
+@media only screen and (max-width: 600px) {
+    .ham{
+     display: flex;
+    }
+    ul{
+     display: none;
+     background-color: darkcyan;
+    }
+    ul.ham_active{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     top: 90px;
+     width: 100%;
+     gap:50px;
+     height: 700px;
+     left: 0;
+  
+    
+    }
+
+
+ 
+ .fa-solid, .fas {
+     font-weight: 900;
+     margin-top: -43px;
+ }
+ }
+
+ /* footer */
+ .footer{
+    display: flex;
+   height: 400px;
+    background-color: lightblue;
+    align-items: center;
+    justify-content: center;
+}
+.mail{
+    width: 52%;
+  text-align: center;
+}
+.mail input{
+    height: 40px;
+    width:300px;
+    background: transparent;
+    text-align: center;
+}
+.mail button{
+    all: unset;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-left: 0rem;
+    border: 2px solid black;
+    padding: 10px 30px;
+    margin: 10px 0px;
+    background: transparent;
+    cursor: pointer;
+
+}
+.img{
+    width: 15%;
+}
+.img{
+    display: flex;
+  }
+.img img{
+    width: 100%;
+padding: 10px;
+}
+.add p{
+    margin-top: 364px;
+    text-align: center;
+    margin-left: -799px;
+}
+@media only screen and (max-width: 600px){
+    .footer{
+        display: grid;
+        height: 361px;
+     
+       
+    }
+    .mail{
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: -8px;
+    }
+    .mail input{
+        height:50px;
+        width:90%;
+        background: transparent;
+      
+    }
+    .add p {
+        margin-top: 16px;
+        text-align: center;
+        margin-left: -37px;
+    }
+   
+}
+
+/* about */
+.myconatiner{
+    background-color: rgb(2, 181, 181);
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.story{
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+}
+.story h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.story p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.img{
+    width: 50%;
+}
+.paraghraph{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+.para{
+  flex-basis: 40%;
+}
+@media only screen and (max-width: 600px){
+    .about{
+        display: grid;
+         }  
+    .story{
+        width: 100%;
+         }
+    .img{
+        width: 100%;
+    }
+    .story h3{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .story p{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .paraghraph{
+        display: grid;
+        align-items: center;
+        margin: 20px;
+    }
+    .para{
+        flex-basis: 20%;
+      }
+}

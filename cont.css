@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Cormorant Garamond', serif;
+ 
+}
+
+.logo {
+    font-size: 2.5rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 38%;
+}
+
+ul li {
+  
+    font-weight: 400;
+
+}
+
+ul li a {
+    color: black;
+    font-size: 1.5rem;
+}
+.ham{
+    font-size: 30px;
+    float: right;
+    display: none;
+    margin-right: 20px;
+   
+}
+
+
+@media only screen and (max-width: 600px) {
+    .ham{
+     display: flex;
+    }
+    ul{
+     display: none;
+    }
+    ul.ham_active{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     top: 90px;
+     width: 100%;
+     gap:50px;
+     height: 700px;
+     left: 0;
+     background-color: rgb(150, 252, 245);
+    }
+
+ 
+    .fa-solid, .fas {
+     font-weight: 900;
+     margin-top: -43px;
+ }
+ }
+
+
+
+.conatact{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.conatact .flower{
+    width: 60%;
+}
+.conatact .flower img{
+    height: 500px;
+    width: 500px;
+}
+.conatact .info{
+    width: 40%;
+margin-top: 50px;
+align-items: center;
+}
+.conatact .info h1{
+   text-align: left;
+}
+.input input{
+    margin: 10px;
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+}
+.input textarea{
+    margin: 10px;
+     width: 300px;
+    padding: 10px;
+}
+.input button{
+    all: unset;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.input button:hover{
+    background-color: darkcyan;
+}
+@media only screen and (max-width: 600px){
+    .conatact{
+        display: grid;
+        justify-content: center;
+     
+    }
+    .conatact .flower {
+        width: 100%;
+        margin-left: 0px;
+      text-align: center;
+    }
+    .conatact .info {
+        width: 90%;
+        margin-top: 50px;
+        text-align: center;
+        align-items: center;
+    }
+    .conatact .info h1{
+        text-align: center;
+    }
+}
+
+
+
+/* footer */
+.footer{
+    display: flex;
+   height: 400px;
+    background-color: lightblue;
+    align-items: center;
+    justify-content: center;
+}
+.mail{
+    width: 52%;
+  text-align: center;
+}
+.mail input{
+    height: 40px;
+    width:300px;
+    background: transparent;
+    text-align: center;
+}
+.mail button{
+    all: unset;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-left: 0rem;
+    border: 2px solid black;
+    padding: 10px 30px;
+    margin: 10px 0px;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.add p{
+    margin-top: 364px;
+    text-align: center;
+    margin-left: -799px;
+}
+@media only screen and (max-width: 600px){
+    .footer{
+        display: grid;
+       height: 400px;
+        background-color: lightblue;
+    }
+    .mail{
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: -8px;
+    }
+    .mail input{
+        height: 40px;
+        width:300px;
+        background: transparent;
+    }
+   
+    .add p {
+        margin-top: -61px;
+        text-align: center;
+        margin-left: -26px;
+    }
+}

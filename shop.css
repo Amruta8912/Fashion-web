@@ -1,0 +1,313 @@
+/* shop */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+}
+.logo {
+    font-size: 2.5rem;
+    padding: 10px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+z-index: 999;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 38%;
+}
+
+ul li {
+  
+    font-weight: 400;
+
+}
+
+ul li a {
+    color: black;
+    font-size: 1.5rem;
+  
+}
+.ham{
+    font-size: 30px;
+    float: right;
+    display: none;
+    margin-right: 20px;
+   
+}
+.banner1{
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/omg/gorgeous-woman-with-blonde-wavy-hair-wearing-elegant-beige-dress.jpg');
+}
+.shop{
+    margin: 20px;
+    text-align: center;
+}
+.sell a{
+    padding: 10px;
+    margin: 10px;
+}
+/* product */
+.myproduct .products{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+      border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+}
+.myproduct {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.myproduct .products img{
+    width: 100%;
+    border-radius: 20px;
+  
+}
+.myproduct .products .des{
+    text-align: start;
+    padding: 10px 0;
+}
+.myproduct .products .des span{
+    color: darkcyan;
+}
+.myproduct .products .des h5{
+ 
+    font-size: 16px;
+}
+.myproduct .products .des i{
+    font-size: 12px;
+    color: black;
+}
+.myproduct .products .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.myproduct .products .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+   border-radius: 50px;
+   font-weight: 500;
+   position: absolute;
+   bottom: 20px;
+   right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .ham{
+     display: flex;
+    }
+    ul{
+     display: none;
+    }
+    ul.ham_active{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     top: 90px;
+     width: 100%;
+     gap:50px;
+     height: 700px;
+     left: 0;
+     background-color: rgb(150, 252, 245);
+     z-index: 9;
+    }
+    .fa-solid, .fas {
+        font-weight: 900;
+        margin-top: -43px;
+    }
+}
+
+
+    @media only screen and (max-width: 600px){
+        .myproduct {
+         
+            justify-content: center;
+          
+        }
+
+        .myproduct .products {
+            margin: 15px;
+        }
+    }
+
+
+
+
+
+
+
+    /* footer */
+    .footer{
+        display: flex;
+       height: 400px;
+        background-color: lightblue;
+        align-items: center;
+        justify-content: center;
+    }
+    .mail{
+        width: 52%;
+      text-align: center;
+    }
+    .mail input{
+        height: 40px;
+        width:300px;
+        background: transparent;
+        text-align: center;
+    }
+.mail button{
+    all: unset;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-left: 0rem;
+    border: 2px solid black;
+    padding: 10px 30px;
+    margin: 10px 0px;
+    background: transparent;
+    cursor: pointer;
+
+}
+.img{
+    width: 15%;
+}
+.img{
+    display: flex;
+  
+    margin: 20px;
+}
+.img img{
+    width: 100%;
+  padding: 10px;
+}
+.add p{
+    margin-top: 364px;
+    text-align: center;
+    margin-left: -799px;
+}
+@media only screen and (max-width: 600px){
+    .footer{
+        display: grid;
+       height: 400px;
+        background-color: lightblue;
+    }
+    .mail{
+        width: 100%;
+      text-align: center;
+      margin-top:50px ;
+      margin-left: -11px;
+    }
+    .mail input{
+        height: 40px;
+        width:300px;
+        background: transparent;
+    }
+    .img{
+        width: 30%;
+    }
+    .img{
+        display: flex;
+      
+        margin: 20px;
+    }
+    .img img{
+        width: 100%;
+      padding: 10px;
+    }
+    .add p {
+        margin-top: 3px;
+        text-align: center;
+        margin-left: -99px;
+    }
+}
+
+#pagination{
+    text-align: center;
+}
+#pagination a{
+text-decoration: none;
+background-color: darkcyan;
+padding: 15px 20px;
+border-radius: 4px;
+color: black;
+font-weight: 600;
+}
+#pagination a{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* single product */
+#prodetails .singleproimg{
+width: 40%;
+margin-right: 50px;
+margin: 20px;
+}
+.smallimg{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+  
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#prodetails .single-pro-details button{
+    all: unset;
+    font-size: medium;
+    font-weight: 600;
+    background-color: darkcyan;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
